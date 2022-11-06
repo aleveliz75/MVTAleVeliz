@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Familiares (MVT Ale Veliz)</title>
+</head>
+<body>
+    <p>Datos de Familiares:</p>
+
+    {% for familiar in familiares %}
+
+        <p>Mi {{familiar.parentezco}} es {{familiar.nombre}} {{familiar.apellido}}, tiene {{familiar.edad}}, nació el dia {{familiar.cumpleanios}} </p>
+    {% endfor %}
+</body>
+</html>
